@@ -1,0 +1,18 @@
+[[source]]
+name = "pypi"
+url = "https://pypi.org/simple"
+verify_ssl = true
+
+[dev-packages]
+pynvim = "*"
+python-language-server = {extras = ["all"],version = "*"}
+pyls-isort = "*"
+pyls-mypy = "*"
+pyls-black = "*"
+nose = "*"
+
+[packages]
+nose = "*"
+
+[requires]
+python_version = "3.8"
