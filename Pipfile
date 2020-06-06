@@ -13,6 +13,7 @@ nose = "*"
 
 [packages]
 nose = "*"
+jsondiff = {path = "."}
 
 [requires]
 python_version = "3.8"
