@@ -208,8 +208,7 @@ class ExplicitJsonDiffSyntax(object):
 class SymmetricJsonDiffSyntax(object):
     def emit_set_diff(self, a, b, s, added, removed):
         if s == 0.0 or len(removed) == len(a):
-            d[update] = [a, b]
-            return d
+            return [a, b]
         else:
             d = {}
             if added:
@@ -252,8 +251,7 @@ class SymmetricJsonDiffSyntax(object):
         if s == 1.0:
             return {}
         else:
-            d[update] = [a, b]
-            return d
+            return [a, b]
 
     def patch(self, a, d):
         if isinstance(d, list):
